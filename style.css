@@ -61,10 +61,6 @@ p, .product__text, .header__text {
   line-height: 1.4rem;
 }
 
-.product__text--underline {
-text-decoration: underline;
-}
-
 article {
   font-family: var(--font);
 }
@@ -79,6 +75,29 @@ article p {
   font-weight: bold;
   letter-spacing: 1.2px;
 }
+
+.size {
+  text-decoration: none;
+  color: var(--font-color);
+  background-color: var(--bg-color);
+  border-radius: 9999px;
+  padding: .6rem;
+  font-weight: bold;
+  font-size: .8rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
+  text-transform: uppercase;
+}
+
+.size:hover {
+  box-shadow: none;
+}
+
+.small-text {
+  font-size: .8rem;
+}
+
+
+
 
 
 /*------------------------------------*\
@@ -145,6 +164,9 @@ place-items: stretch;
 }
 
 
+
+
+
 /*------------------------------------*\
 #HEADER
 \*------------------------------------*/
@@ -155,8 +177,8 @@ width: 100vw;
 }
 
 .header__logo {
-  padding: 3rem;
-  text-align: center;
+padding: 3rem;
+text-align: center;
 }
 
 .logo {
