@@ -233,7 +233,6 @@ text-align: center;
 font-family: var(--font);
 color: var(--highlight-color);
 font-weight: bold;
-padding: 2rem;
 }
 
 .notes__text {
