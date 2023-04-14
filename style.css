@@ -229,26 +229,29 @@ transform: scale(1.01);
 \*------------------------------------*/
 
 .notes {
+width: 80%;
 text-align: center;  
 font-family: var(--font);
 color: var(--highlight-color);
 font-weight: bold;
+padding-bottom: 1rem;
 }
 
-.notes__text {
-font-weight: bold;
-padding: 1rem;
+.notes__question {
+  color: var(--highlight-color)
+  padding-bottom: 2rem;
 }
 
-.notes__hearticon {
-height: 25px;
-align-self: center;
-}
-
-.notes__hearttext {
-color: var(--highlight-color);
+.notes__calltext {
+display: inline-block;
+text-decoration: none;
+text-transform: uppercase;
+color: var(--product-background);
 font-weight: bold;
 margin-top: 3px;
+background-color: var(--highlight-color);
+padding: 0.5rem;
+border-radius: 9999px;
 }
 
 
@@ -271,7 +274,7 @@ footer {
 .footer__contact {
   text-transform: uppercase;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   letter-spacing: .5rem;
   font-weight:bold;
   font-size: 1.5rem;
