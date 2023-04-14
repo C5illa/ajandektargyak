@@ -242,6 +242,10 @@ padding-bottom: 1rem;
   padding-bottom: 2rem;
 }
 
+.notes__text {
+  padding-bottom: 0.8rem;
+}
+
 .notes__calltext {
 display: inline-block;
 letter-spacing: .05rem;
