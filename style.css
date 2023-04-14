@@ -244,13 +244,14 @@ padding-bottom: 1rem;
 
 .notes__calltext {
 display: inline-block;
+letter-spacing: .05rem;
 text-decoration: none;
 text-transform: uppercase;
 color: var(--product-background);
 font-weight: bold;
 margin-top: 3px;
 background-color: var(--highlight-color);
-padding: 0.5rem;
+padding: 0.6rem;
 border-radius: 9999px;
 }
 
