@@ -257,6 +257,11 @@ margin-top: 3px;
 background-color: var(--highlight-color);
 padding: 0.6rem;
 border-radius: 9999px;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
+}
+
+.notes__calltext:hover {
+  box-shadow: none;
 }
 
 
