@@ -4,13 +4,15 @@
 \*------------------------------------*/
 
 :root {
+  --font-color:           #0A1522;
   --bg-color:             #DEEBF3;
-  --product-background:   #ffffff;
-  --font-color:           #010101;
-  --highlight-color:      #059DC1;
-  --font:                'Roboto', sans-serif;
-  --secondary-font:      'Archivo', sans-serif;
-}
+  --product-bacground:    #ffffff;
+  --highlight-color:      #00B3CC;
+  --secondary-color-hover:#4cc9db;
+  --blue-transparent:     rgba(0,179,204,.2);
+  --font:                 'Roboto', sans-serif;
+  --secondary-font:       'Raleway', sans-serif;     
+  }
 
 
 
@@ -49,6 +51,13 @@ h2 {
   letter-spacing: .3rem;
 }
 
+h3 {
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
 h4 {
  text-transform: uppercase;
  font-weight: bold;
@@ -56,9 +65,18 @@ h4 {
  margin-top: 1rem;
 }
 
+h5 {
+  color: var(--highlight-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 1.rem;
+  letter-spacing: .2rem;
+}
+
 p, .product__text, .header__text {
-  font-size: 1.05rem;
-  line-height: 1.4rem;
+  font-size: .95rem;
+  line-height: 1.2rem;
 }
 
 article {
@@ -73,7 +91,6 @@ article p {
   font-size: 1.5rem;
   font-family: var(--font);
   font-weight: bold;
-  letter-spacing: 1.2px;
 }
 
 .size {
@@ -95,6 +112,32 @@ article p {
 .small-text {
   font-size: .8rem;
 }
+
+.cut__warning {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--highlight-color);
+}
+  
+.cut__warning:hover {
+  opacity: .65;
+}
+
+.contact__link--inline {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact__link--inline:hover {
+  opacity: .65;
+}
+
+.header__text--warning {
+  padding-top: 0;
+  margin-bottom: 2rem;
+  color: var(--highlight-color);
+}
+
 
 
 
@@ -186,18 +229,21 @@ max-width: 200px;
 }
 
 .header__button {
-text-decoration: none;
-font-family: var(--font);
-font-weight: bold;
-font-size: .8rem;
-text-transform: uppercase;
-background: var(--highlight-color);
-padding: .9rem;
-border-radius: 9999px;
+  text-decoration: none;
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: .8rem;
+  text-transform: uppercase;
+  padding: .5rem;
+  border: 3px solid var(--blue-transparent);
+  border-radius: 9999px;
 }
 
 a.header__button:hover {
-  color: var(--bg-color);
+  border-radius: 7px;
+  border: 3px solid transparent;
+  background-color: var(--blue-transparent);
+  transition: all .2s ease;
 }
 
 
@@ -209,7 +255,7 @@ a.header__button:hover {
 \*------------------------------------*/
 
 .product {
-background-color: var(--product-background);
+background-color: var(--product-bacground);
 box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 border-radius: 30px;
 margin-bottom: 25px;
@@ -238,31 +284,33 @@ padding-bottom: 1rem;
 }
 
 .notes__question {
-  color: var(--highlight-color)
-  padding-bottom: 2rem;
+  color: var(--highlight-color);
+  padding-bottom: .5rem;
 }
 
 .notes__text {
-  padding-bottom: 0.8rem;
+  padding-bottom: .8rem;
 }
 
 .notes__calltext {
-display: inline-block;
-letter-spacing: .05rem;
-text-decoration: none;
-text-transform: uppercase;
-color: var(--product-background);
-font-weight: bold;
-margin-top: 3px;
-background-color: var(--highlight-color);
-padding: 0.6rem;
-border-radius: 9999px;
-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
-}
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: var(--font-color);
+  font-weight: bold;
+  margin-top: 3px;
+  padding: 0.6rem;
+  border-radius: 9999px;
+  border: 3px solid var(--blue-transparent);
+  }
 
-.notes__calltext:hover {
-  box-shadow: none;
-}
+  .notes__calltext:hover {
+    border: 3px solid transparent;
+    border-radius: 7px;
+    background-color: var(--blue-transparent);
+    transition: all .25s ease-in-out;
+  }
 
 
 
@@ -285,7 +333,6 @@ footer {
   text-transform: uppercase;
   text-align: center;
   padding-top: 1.5rem;
-  letter-spacing: .5rem;
   font-weight:bold;
   font-size: 1.5rem;
 }
@@ -305,15 +352,15 @@ footer {
 }
 
 .footer__icon-1, .footer__icon-2, .footer__icon-3 {
-  width: 50px;
+  width: 40px;
   margin-left: 10px;
   margin-right: 10px;
  }
 
-.footer__text {
-font-size: 1.1rem;
-margin-top: 10px;
-margin-bottom: -2rem;
+ .footer__text {
+  font-size: .9rem;
+  margin-top: 10px;
+  margin-bottom: -2rem;
 }
 
 .footer__designed {
